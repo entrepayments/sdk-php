@@ -1,0 +1,36 @@
+{
+  "name": "globalpagamentos/sdk-php",
+  "description": "SDK de integração",
+  "license": "MIT",
+  "type": "library",
+  "version": "1.0.0",
+  "authors": [
+    {
+      "name": "João Batista Neto",
+      "email": "neto.joaobatista@imasters.com.br"
+    }
+  ],
+  "require": {
+    "php": "~8.0",
+    "psr/log": "*",
+    "monolog/monolog": "*",
+    "ext-dom": "*",
+    "ext-curl": "*",
+    "ext-json": "*"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "*",
+    "phpstan/phpstan": "*",
+    "psalm/plugin-phpunit": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "EntrePayments\\": "src/EntrePayments"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "EntrePayments\\": "tests/EntrePayments"
+    }
+  }
+}
